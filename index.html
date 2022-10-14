@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>slider</title>
+        <link rel="stylesheet" href="sytle.css">
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto+Condensed:wght@400;700&display=swap');
+        </style>
+    </head>
+    <header>
+        <div class="top-menu">
+            <div class="site-name">
+                <span>JOBLANCER</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Freelancers</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="user">
+                <div class="user-profile">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="faq">
+                    <i class="fa-solid fa-question"></i>
+                </div>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1665682797">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+    <body>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-image-holder">
+                            <img src="1.png" alt="photo" class="card-image">
+                        </div>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <div class="information">
+                            <span class="person-name">Person Name</span>
+                            <span class="person-info">Email Address</span>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="buttons">
+                            <button>Hire ME</button>
+                            <button>See Projects</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="app.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                },
+                loop: false,
+                freeMode:true,
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    900: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    1100: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    1400: {
+                        slidesPerView: 5,
+                        spaceBetween: 15,
+                    },
+                },
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/147855b922.js" crossorigin="anonymous"></script>
+    </body>
+</html>
